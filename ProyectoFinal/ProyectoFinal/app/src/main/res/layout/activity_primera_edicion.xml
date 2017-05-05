@@ -1,0 +1,594 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:background="#2980B9"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+       <ImageView
+           android:layout_width="100dp"
+           android:layout_height="100dp"
+           android:src="@drawable/foto"
+           android:layout_marginTop="5dp"
+           android:id="@+id/foto"
+           />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtnombreyapellido"
+                android:layout_width="287dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Rocio Tarda"
+                android:fontFamily="casual"
+                android:textSize="20dp"
+                android:textColor="#000"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtaño"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="6°"
+                    android:textSize="20dp"
+                    android:fontFamily="casual"
+                    android:textColor="#000"
+                   />
+
+                <TextView
+                    android:id="@+id/txtcurso"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="IC"
+                    android:textSize="20dp"
+                    android:fontFamily="casual"
+                    android:textColor="#000"/>
+              </LinearLayout>
+            <TextView
+                android:id="@+id/txtnacimiento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:text="10/11/99"
+                android:fontFamily="casual"
+                android:textSize="20dp"
+                android:textColor="#000"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/ingresoEstado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="casual"
+                android:hint="Estado"
+                android:text=""
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textColor="#585858"
+                android:textSize="15dp" />
+
+        </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/ingresoDireccion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="casual"
+            android:hint="Direccion"
+            android:text=""
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textColor="#585858"
+            android:textSize="15dp" />
+
+    </android.support.design.widget.TextInputLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="17dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/icono" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="casual"
+            android:text="Marque sus horarios:"
+            android:textColor="#000"
+            android:textSize="15dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:scaleType="centerInside"
+            android:background="#FFFF"
+            android:src="@drawable/ele"
+            android:layout_weight="0.01" />
+
+        <ImageButton
+            android:id="@+id/imageButton12Lunes"
+            android:layout_width="59dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="0.04"
+            android:onClick="btn12hs"
+            android:scaleType="centerCrop"
+            android:background="#FFFF"
+            android:src="@drawable/doce" />
+
+        <ImageButton
+            android:id="@+id/imageButton14Lunes"
+            android:layout_width="59dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="0.04"
+            android:onClick="btn14hs"
+            android:scaleType="centerCrop"
+            android:background="#FFFF"
+            android:src="@drawable/catorce" />
+
+        <ImageButton
+            android:id="@+id/imageButton16Lunes"
+            android:layout_width="59dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="0.04"
+            android:onClick="btn16hs"
+            android:scaleType="centerCrop"
+            android:background="#FFFF"
+            android:src="@drawable/diezyseis" />
+
+        <ImageButton
+            android:id="@+id/imageButton17Lunes"
+            android:layout_width="59dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="0.04"
+            android:onClick="btn17hs"
+            android:scaleType="centerCrop"
+            android:background="#FFFF"
+            android:src="@drawable/diezysiete" />
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="15dp"
+            android:scaleType="centerInside"
+            android:background="#FFFF"
+            android:src="@drawable/eme" />
+            <ImageButton
+                android:id="@+id/imageButton12Martes"
+                android:layout_width="59dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="0.04"
+                android:onClick="btn12hs"
+                android:scaleType="centerCrop"
+                android:background="#FFFF"
+                android:src="@drawable/doce" />
+
+            <ImageButton
+                android:id="@+id/imageButton14Martes"
+                android:layout_width="59dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="0.04"
+                android:onClick="btn14hs"
+                android:scaleType="centerCrop"
+                android:background="#FFFF"
+                android:src="@drawable/catorce" />
+
+            <ImageButton
+                android:id="@+id/imageButton16Martes"
+                android:layout_width="59dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="0.04"
+                android:onClick="btn16hs"
+                android:scaleType="centerCrop"
+                android:background="#FFFF"
+                android:src="@drawable/diezyseis" />
+
+            <ImageButton
+                android:id="@+id/imageButton17Martes"
+                android:layout_width="59dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="0.04"
+                android:onClick="btn17hs"
+                android:scaleType="centerCrop"
+                android:background="#FFFF"
+                android:src="@drawable/diezysiete" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="39dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="15dp"
+                android:scaleType="centerInside"
+                android:background="#FFFF"
+                android:src="@drawable/eme" />
+            <ImageButton
+                android:id="@+id/imageButton12Miercoles"
+                android:layout_width="59dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="0.04"
+                android:onClick="btn12hs"
+                android:scaleType="centerCrop"
+                android:background="#FFFF"
+                android:src="@drawable/doce" />
+
+            <ImageButton
+                android:id="@+id/imageButton14Miercoles"
+                android:layout_width="59dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="0.04"
+                android:onClick="btn14hs"
+                android:scaleType="centerCrop"
+                android:background="#FFFF"
+                android:src="@drawable/catorce" />
+
+            <ImageButton
+                android:id="@+id/imageButton16Miercoles"
+                android:layout_width="59dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="0.04"
+                android:onClick="btn16hs"
+                android:scaleType="centerCrop"
+                android:background="#FFFF"
+                android:src="@drawable/diezyseis" />
+
+            <ImageButton
+                android:id="@+id/imageButton17Miercoles"
+                android:layout_width="59dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="0.04"
+                android:onClick="btn17hs"
+                android:scaleType="centerCrop"
+                android:background="#FFFF"
+                android:src="@drawable/diezysiete" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <ImageButton
+                android:id="@+id/imageButtonJ"
+                android:layout_width="42dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="15dp"
+                android:onClick="btnJ"
+                android:background="#FFFF"
+                android:scaleType="centerInside"
+                android:src="@drawable/jota" />
+            <ImageButton
+                android:id="@+id/imageButton12Jueves"
+                android:layout_width="59dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="0.04"
+                android:onClick="btn12hs"
+                android:scaleType="centerCrop"
+                android:background="#FFFF"
+                android:src="@drawable/doce" />
+
+            <ImageButton
+                android:id="@+id/imageButton14Jueves"
+                android:layout_width="59dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="0.04"
+                android:onClick="btn14hs"
+                android:scaleType="centerCrop"
+                android:background="#FFFF"
+                android:src="@drawable/catorce" />
+
+            <ImageButton
+                android:id="@+id/imageButton16Jueves"
+                android:layout_width="59dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="0.04"
+                android:onClick="btn16hs"
+                android:scaleType="centerCrop"
+                android:background="#FFFF"
+                android:src="@drawable/diezyseis" />
+
+            <ImageButton
+                android:id="@+id/imageButton17Jueves"
+                android:layout_width="59dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="0.04"
+                android:onClick="btn17hs"
+                android:scaleType="centerCrop"
+                android:background="#FFFF"
+                android:src="@drawable/diezysiete" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageButton
+                android:id="@+id/imageButtonV"
+                android:layout_width="44dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="15dp"
+                android:onClick="btnV"
+                android:background="#FFFF"
+                android:scaleType="centerInside"
+                android:src="@drawable/ve" />
+
+            <ImageButton
+                android:id="@+id/imageButton12Viernes"
+                android:layout_width="59dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="0.04"
+                android:onClick="btn12hs"
+                android:scaleType="centerCrop"
+                android:background="#FFFF"
+                android:src="@drawable/doce" />
+
+            <ImageButton
+                android:id="@+id/imageButton14Viernes"
+                android:layout_width="59dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="0.04"
+                android:onClick="btn14hs"
+                android:scaleType="centerCrop"
+                android:background="#FFFF"
+                android:src="@drawable/catorce" />
+
+            <ImageButton
+                android:id="@+id/imageButton16Viernes"
+                android:layout_width="59dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="0.04"
+                android:onClick="btn16hs"
+                android:scaleType="centerCrop"
+                android:background="#FFFF"
+                android:src="@drawable/diezyseis" />
+
+            <ImageButton
+                android:id="@+id/imageButton17Viernes"
+                android:layout_width="59dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="0.04"
+                android:onClick="btn17hs"
+                android:scaleType="centerCrop"
+                android:background="#FFFF"
+                android:src="@drawable/diezysiete" />
+        </LinearLayout>
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="17dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/icono" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="casual"
+            android:text="Marque sus transportes:"
+            android:textColor="#000"
+            android:textSize="15dp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/imageButtonAuto"
+            android:layout_width="59dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="0.04"
+            android:onClick="btnAuto"
+            android:scaleType="centerInside"
+            android:background="#FFFF"
+            android:src="@drawable/auto" />
+
+        <ImageButton
+            android:id="@+id/imageButtonSube"
+            android:layout_width="59dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="0.04"
+            android:onClick="btnSubte"
+            android:scaleType="centerInside"
+            android:background="#FFFF"
+            android:src="@drawable/subte" />
+
+        <ImageButton
+            android:id="@+id/imageButtonBici"
+            android:layout_width="59dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="0.04"
+            android:onClick="btnBici"
+            android:scaleType="centerInside"
+            android:background="#FFFF"
+            android:src="@drawable/bicicleta"/>
+
+        <ImageButton
+            android:id="@+id/imageButtonColectivo"
+            android:layout_width="59dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="0.04"
+            android:onClick="btnColectivo"
+            android:scaleType="centerInside"
+            android:background="#FFFF"
+            android:src="@drawable/colectivo" />
+
+        <ImageButton
+            android:id="@+id/imageButtonCaminando"
+            android:layout_width="59dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="0.04"
+            android:onClick="btnCaminando"
+            android:scaleType="centerInside"
+            android:background="#FFFF"
+            android:src="@drawable/caminando" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="17dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/icono" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="casual"
+            android:text="Ingrese sus lineas frecuentes:"
+            android:textColor="#000"
+            android:textSize="15dp" />
+    </LinearLayout>
+
+    <EditText
+
+        android:id="@+id/txtLineasFrecuentes"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="30dp"
+        android:fontFamily="casual"
+        android:text="Subte A, 132, "
+        android:textColor="#000"
+        android:textSize="15dp" />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">>
+
+        <ImageView
+            android:layout_width="17dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/icono" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="casual"
+            android:text="Marque su sede:"
+            android:textColor="#000"
+            android:textSize="15dp" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/radioButtonAlmagro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Almagro" />
+
+            <RadioButton
+                android:id="@+id/radioButtonBelgrano"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Belgrano" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="280dp"
+        android:text="Siguiente" />
+
+</LinearLayout>
+
+
+
